@@ -7,3 +7,5 @@ notebook
 opencv-python
 fastapi
 nltk
+pytest
+esptool
