@@ -16,4 +16,10 @@ cd() {
 }
 
 # Set custom prompt
-export PS1="\[\e[1;32m\]\W\[\e[0m\] \$ "
+
+# entire pwd
+# export PS1="\[\e[1;32m\]\w\[\e[0m\] \$ "
+
+# lastdir
+# export PS1="\[\e[1;32m\]\W\[\e[0m\] \$ "
+export PS1="\[\e[1;37m\]iamprasadraju:~\[\e[1;32m\]/\W\[\e[0m\] \$ "
