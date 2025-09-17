@@ -3,3 +3,4 @@ export PS1='\u@\h:\[\e[01;32m\]\w\[\e[0m\]\$ '
 export EDITOR='vim'
 
 alias ls='ls --color=auto'
+alias ls="ls --ignore='\$RECYCLE.BIN' --ignore='System Volume Information'"
