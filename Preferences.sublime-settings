@@ -6,7 +6,7 @@
     "light_theme": "Default Dark.sublime-theme",
     "index_files": true,
     "ignored_packages": [],
-    "font_face": "SF Mono",
+    "font_face": "Cascadia Code",
     "save_on_focus_lost": true,
     "auto_complete": false
 }
