@@ -1,0 +1,255 @@
+{
+  "toolbar": {
+    "agent_review": false,
+    "selections_menu": true,
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "use_auto_surround": true,
+  "always_treat_brackets_as_autoclosed": false,
+  "jsx_tag_auto_close": {
+    "enabled": true
+  },
+  "show_completions_on_input": true,
+  "show_completion_documentation": true,
+  "lsp_document_colors": "none",
+  "tasks": {
+    "enabled": false,
+    "prefer_lsp": false
+  },
+  "inline_code_actions": true,
+  "gutter": {
+    "breakpoints": true,
+    "folds": true,
+    "runnables": true
+  },
+  "rounded_selection": true,
+  "linked_edits": false,
+  "completions": {
+    "lsp": false
+  },
+  "lsp": {
+    "discord_presence": {
+      "initialization_options": {
+        // Application ID for the rich presence (don't touch it unless you know what you're doing)
+        "application_id": "1263505205522337886",
+        // Base URL for all language icons
+        "base_icons_url": "https://raw.githubusercontent.com/xhyrom/zed-discord-presence/main/assets/icons/",
+
+        "state": "Working on {filename}",
+        "details": "In {workspace}",
+        // URL for the large image
+        "large_image": "{base_icons_url}/{language:lo}.png", // :lo lowercase the language name
+        "large_text": "{language:u}", // :u capitalizes the first letter
+        // URL for the small image
+        "small_image": "{base_icons_url}/zed.png",
+        "small_text": "Zed",
+
+        // Idle settings - when you're inactive
+        "idle": {
+          "timeout": 300, // Idle timeout in seconds (300 seconds = 5 minutes)
+
+          // Action to take when idle
+          // `change_activity` - changes the activity to idle with the following details
+          // `clear_activity` - clears the activity (hides it)
+          "action": "change_activity",
+
+          "state": "Idling",
+          "details": "In Zed",
+          "large_image": "{base_icons_url}/zed.png",
+          "large_text": "Zed",
+          "small_image": "{base_icons_url}/idle.png",
+          "small_text": "Idle",
+        },
+        "git_integration": true,
+
+        // Per-language overrides
+        "languages": {
+          "rust": {
+            "state": "Hacking on {filename}",
+            "details": "Rustacean at work",
+          },
+        },
+      },
+    },
+  },
+  "languages": {
+    "Python": {
+      "format_on_save": "on",
+      "auto_indent_on_paste": true,
+      "auto_indent": true
+    }
+  },
+  "base_keymap": "VSCode",
+  "message_editor": {
+    "auto_replace_emoji_shortcode": true
+  },
+  "hard_tabs": true,
+  "prettier": {
+    "allowed": true
+  },
+  "ensure_final_newline_on_save": false,
+  "remove_trailing_whitespace_on_save": false,
+  "format_on_save": "off",
+  "tab_size": 4,
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "agent_ui_font_size": 15.0,
+  "agent_buffer_font_size": 26.0,
+  "auto_indent_on_paste": false,
+  "auto_indent": false,
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "enabled": true,
+    "coloring": "disabled"
+  },
+  "scrollbar": {
+    "selected_symbol": true,
+    "axes": {
+      "vertical": false,
+      "horizontal": true
+    },
+    "diagnostics": "none",
+    "selected_text": true,
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true
+  },
+  "session": {
+    "restore_unsaved_buffers": true
+  },
+  "inlay_hints": {
+    "enabled": false,
+    "show_type_hints": false,
+    "show_parameter_hints": false,
+    "show_other_hints": false,
+    "show_background": false,
+    "show_value_hints": false,
+    "scroll_debounce_ms": 40
+  },
+  "autoscroll_on_clicks": false,
+  "scroll_beyond_last_line": "one_page",
+  "use_system_window_tabs": false,
+  "preview_tabs": {
+    "enable_keep_preview_on_code_navigation": false,
+    "enable_preview_from_file_finder": false,
+    "enabled": false
+  },
+  "search": {
+    "button": true
+  },
+  "use_system_path_prompts": true,
+  "agent": {
+    "enable_feedback": false,
+    "single_file_review": false,
+    "button": false,
+    "model_parameters": []
+  },
+  "git_panel": {
+    "status_style": "icon",
+    "dock": "bottom",
+    "button": true,
+    "sort_by_path": false,
+    "scrollbar": {
+      "show": "system"
+    }
+  },
+  "outline_panel": {
+    "indent_guides": {
+      "show": "never"
+    },
+    "git_status": true,
+    "button": false
+  },
+  "tabs": {
+    "show_close_button": "always",
+    "show_diagnostics": "off",
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": false
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": true,
+    "show": true
+  },
+  "project_panel": {
+    "show_diagnostics": "off",
+    "git_status": true,
+    "indent_guides": {
+      "show": "never"
+    },
+    "sticky_scroll": true,
+    "button": true
+  },
+  "debugger": {
+    "stepping_granularity": "line",
+    "dock": "left",
+    "button": true
+  },
+  "status_bar": {
+    "cursor_position_button": true,
+    "active_language_button": true
+  },
+  "diagnostics": {
+    "include_warnings": false,
+    "button": false,
+    "lsp_pull_diagnostics": {
+      "enabled": false
+    }
+  },
+  "enable_language_server": true,
+  "use_on_type_format": false,
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false
+    }
+  },
+  "title_bar": {
+    "show_branch_name": true,
+    "show_onboarding_banner": true,
+    "show_branch_icon": true,
+    "show_menus": false,
+    "show_sign_in": false,
+    "show_user_picture": true,
+    "show_project_items": false
+  },
+  "minimum_contrast_for_highlights": 46.0,
+  "selection_highlight": true,
+  "current_line_highlight": "line",
+  "cursor_shape": "bar",
+  "experimental.theme_overrides": {
+    "players": [
+      {
+        "cursor": "#A9A9A9"
+      }
+    ]
+  },
+  "vim_mode": false,
+  "disable_ai": false,
+  "autosave": "on_focus_change",
+  "buffer_font_family": "SF Mono",
+  "buffer_line_height": "standard",
+  "ui_font_family": ".ZedMono",
+  "ui_font_weight": 500.0,
+  "buffer_font_weight": 100.0,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "auto_update": false,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "ui_font_size": 14.0,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Dark",
+    "dark": "Xcode Midnight"
+  }
+}
