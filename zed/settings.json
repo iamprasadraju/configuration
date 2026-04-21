@@ -1,55 +1,64 @@
 {
+    "format_on_save": "off",
+    "use_on_type_format": true,
+    "minimum_contrast_for_highlights": 78.0,
+    "vim": {
+        "toggle_relative_line_numbers": false
+    },
+    "buffer_font_weight": 100.0,
+    "restore_on_startup": "empty_tab",
+    "on_last_window_closed": "quit_app",
+    "when_closing_with_no_tabs": "close_window",
     "collaboration_panel": {
-        "button": false
+        "button": false,
     },
     "notification_panel": {
-        "button": false
+        "button": false,
     },
     "bottom_dock_layout": "contained",
     "close_on_file_delete": true,
     "file_finder": {
         "git_status": false,
-        "file_icons": true
+        "file_icons": true,
     },
     "diagnostics_max_severity": "off",
     "which_key": {
-        "enabled": false
+        "enabled": false,
     },
     "autosave": "on_focus_change",
     "helix_mode": false,
     "text_rendering_mode": "platform_default",
-    "buffer_font_weight": 400.0,
     "buffer_line_height": "standard",
-    "agent_buffer_font_size": 13.0,
-    "agent_ui_font_size": 14.0,
-    "ui_font_weight": 550.0,
-    "ui_font_size": 14.0,
-    "ui_font_family": "SF Mono",
-    "buffer_font_size": 14.0,
-    "buffer_font_family": "SF Mono",
+    "agent_buffer_font_size": 12.0,
+    "agent_ui_font_size": 12.0,
+    "ui_font_weight": 100.0,
+    "ui_font_size": 13.0,
+    "ui_font_family": "Menlo",
+    "buffer_font_size": 12.0,
+    "buffer_font_family": "Menlo",
     "auto_update": false,
     "minimap": {
         "show": "never",
-        "current_line_highlight": "gutter"
+        "current_line_highlight": "gutter",
     },
     "relative_line_numbers": "disabled",
     "toolbar": {
         "agent_review": false,
         "selections_menu": true,
         "quick_actions": true,
-        "breadcrumbs": true
+        "breadcrumbs": true,
     },
     "use_auto_surround": true,
     "always_treat_brackets_as_autoclosed": false,
     "jsx_tag_auto_close": {
-        "enabled": true
+        "enabled": true,
     },
     "show_completions_on_input": true,
     "show_completion_documentation": true,
     "lsp_document_colors": "none",
     "tasks": {
         "enabled": false,
-        "prefer_lsp": false
+        "prefer_lsp": false,
     },
     "inline_code_actions": false,
     "gutter": {
@@ -57,12 +66,12 @@
         "line_numbers": true,
         "breakpoints": false,
         "folds": false,
-        "runnables": false
+        "runnables": false,
     },
     "rounded_selection": true,
     "linked_edits": false,
     "completions": {
-        "lsp": false
+        "lsp": false,
     },
     "lsp": {
         "discord_presence": {
@@ -108,38 +117,45 @@
         "Python": {
             "format_on_save": "on",
             "auto_indent_on_paste": true,
-            "auto_indent": true
-        }
+            "auto_indent": "syntax_aware",
+        },
     },
     "base_keymap": "VSCode",
     "message_editor": {
-        "auto_replace_emoji_shortcode": true
+        "auto_replace_emoji_shortcode": true,
     },
     "prettier": {
-        "allowed": false
+        "allowed": false,
     },
     "remove_trailing_whitespace_on_save": true,
     "tab_size": 4,
     "git": {
+        "blame": {
+            "show_avatar": true
+        },
         "inline_blame": {
-            "enabled": false
-        }
+            "show_commit_summary": false,
+            "enabled": false,
+        },
     },
-    "indent_guides": {},
+    "indent_guides": {
+        "active_line_width": 1,
+        "line_width": 1
+    },
     "scrollbar": {
         "selected_symbol": false,
         "axes": {
             "vertical": false,
-            "horizontal": true
+            "horizontal": true,
         },
         "diagnostics": "none",
         "selected_text": false,
         "cursors": false,
-        "git_diff": false,
-        "search_results": false
+        "git_diff": true,
+        "search_results": false,
     },
     "session": {
-        "restore_unsaved_buffers": true
+        "restore_unsaved_buffers": true,
     },
     "inlay_hints": {
         "enabled": false,
@@ -148,7 +164,7 @@
         "show_other_hints": false,
         "show_background": false,
         "show_value_hints": false,
-        "scroll_debounce_ms": 40
+        "scroll_debounce_ms": 40,
     },
     "autoscroll_on_clicks": false,
     "scroll_beyond_last_line": "one_page",
@@ -156,72 +172,82 @@
     "preview_tabs": {
         "enable_keep_preview_on_code_navigation": false,
         "enable_preview_from_file_finder": false,
-        "enabled": true
+        "enabled": true,
     },
     "search": {
-        "button": true
+        "button": true,
     },
     "use_system_path_prompts": true,
     "agent": {
         "enable_feedback": false,
         "single_file_review": false,
         "button": false,
-        "model_parameters": []
+        "model_parameters": [],
     },
     "git_panel": {
+        "file_icons": false,
         "tree_view": true,
-        "dock": "bottom",
-        "button": false,
+        "button": true,
         "sort_by_path": false,
         "scrollbar": {
-            "show": "system"
-        }
+            "show": "system",
+        },
     },
     "outline_panel": {
         "folder_icons": true,
         "indent_guides": {},
         "git_status": false,
-        "button": false
+        "button": false,
     },
     "tabs": {
         "show_diagnostics": "off",
         "close_position": "right",
         "file_icons": false,
-        "git_status": false
+        "git_status": true,
     },
     "tab_bar": {
         "show_tab_bar_buttons": false,
         "show_nav_history_buttons": true,
-        "show": true
+        "show": true,
     },
     "project_panel": {
+        "git_status_indicator": true,
+        "bold_folder_labels": false,
+        "starts_open": true,
+        "auto_reveal_entries": true,
+        "indent_size": 14.0,
+        "folder_icons": true,
+        "entry_spacing": "standard",
+        "default_width": 217.0,
+        "diagnostic_badges": false,
+        "file_icons": true,
         "show_diagnostics": "off",
-        "git_status": false,
         "indent_guides": {},
         "sticky_scroll": true,
-        "button": false
+        "button": true,
     },
     "debugger": {
         "stepping_granularity": "line",
-        "button": false
+        "button": true,
     },
     "status_bar": {
         "cursor_position_button": true,
-        "active_language_button": true
+        "active_language_button": true,
     },
     "diagnostics": {
         "include_warnings": false,
         "button": false,
         "lsp_pull_diagnostics": {
-            "enabled": false
-        }
+            "enabled": false,
+        },
     },
     "enable_language_server": true,
     "terminal": {
+        "minimum_contrast": 58.0,
         "button": true,
         "toolbar": {
-            "breadcrumbs": false
-        }
+            "breadcrumbs": false,
+        },
     },
     "title_bar": {
         "show_user_menu": true,
@@ -231,30 +257,29 @@
         "show_menus": false,
         "show_sign_in": false,
         "show_user_picture": true,
-        "show_project_items": false
+        "show_project_items": false,
     },
     "selection_highlight": true,
     "cursor_shape": "block",
     "experimental.theme_overrides": {
         "players": [
             {
-                "cursor": "#A9A9A9"
-            }
-        ]
+                "cursor": "#A9A9A9",
+            },
+        ],
     },
     "vim_mode": false,
-    "disable_ai": false,
-    "telemetry": {},
+    "disable_ai": true,
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false
+    },
     "icon_theme": {
         "mode": "dark",
         "light": "Zed (Default)",
-        "dark": "Zed (Default)"
+        "dark": "VSCode Icons for Zed (Dark Official Icons)",
     },
-    "theme": {
-        "mode": "dark",
-        "light": "Ayu Dark",
-        "dark": "Xcode Midnight"
-    },
+    "theme": "VSCode Modern Dark",
     "theme_overrides": {
         "Xcode Midnight": {
             "editor.background": "#1A1A1A",
@@ -262,7 +287,7 @@
             "editor.gutter.background": "#1A1A1A",
         },
         "terminal": {
-            "detect_venv": "off"
-        }
-    }
+            "detect_venv": "off",
+        },
+    },
 }
