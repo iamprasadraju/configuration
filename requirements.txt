@@ -5,8 +5,6 @@ scikit-learn
 pandas
 notebook
 opencv-python
-fastapi
-nltk
-pytest
-esptool
-"fastapi[standard]"
+seaborn
+scipy
+tensorflow
