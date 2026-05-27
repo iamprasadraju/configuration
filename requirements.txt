@@ -7,4 +7,7 @@ notebook
 opencv-python
 seaborn
 scipy
-tensorflow
+keras
+uv
+plotly
+tqdm

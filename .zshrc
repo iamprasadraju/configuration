@@ -9,10 +9,14 @@ export PROMPT='Jarvis:%F{green}%~%f $ '
 export EDITOR='vim'
 
 # PATH additions
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
-# C++ aliases
-alias clang++='clang++ -std=c++20'
-alias g++='g++ -std=c++20'
+# Added by Windsurf
+export PATH="/Users/jarvis/.codeium/windsurf/bin:$PATH"
+
+
+# micropython
+alias mp='mpremote'
+alias notebook="jupyter notebook"
