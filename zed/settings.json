@@ -7,62 +7,63 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "soft_wrap": "editor_width",
   "disable_ai": false,
   "show_whitespaces": "all",
   "indent_guides": {
     "active_line_width": 1,
-    "line_width": 1,
+    "line_width": 1
   },
   "diagnostics_max_severity": "off",
   "tab_bar": {
-    "show": true,
+    "show": true
   },
   "use_on_type_format": true,
   "inline_code_actions": false,
   "git": {
     "inline_blame": {
-      "enabled": false,
+      "enabled": false
     },
-    "enable_status": true,
+    "enable_status": true
   },
   "toolbar": {
     "quick_actions": true,
-    "breadcrumbs": false,
+    "breadcrumbs": false
   },
   "scrollbar": {
-    "cursors": true,
+    "cursors": true
   },
   "gutter": {
     "runnables": true,
     "folds": true,
-    "line_numbers": true,
+    "line_numbers": true
   },
   "which_key": {
-    "enabled": false,
+    "enabled": false
   },
   "server_url": "https://zed.dev",
   "agent": {
     "show_merge_conflict_indicator": false,
     "button": false,
     "favorite_models": [],
-    "model_parameters": [],
+    "model_parameters": []
   },
   "collaboration_panel": {
-    "button": false,
+    "button": false
   },
   "git_panel": {
-    "button": true,
+    "button": true
   },
   "outline_panel": {
     "git_status": true,
-    "button": false,
+    "button": false
   },
   "diagnostics": {
     "include_warnings": false,
-    "button": false,
+    "button": false
   },
   "terminal": {
-    "button": true,
+    "button": true
   },
   "project_panel": {
     "sort_mode": "directories_first",
@@ -74,30 +75,30 @@
     "file_icons": true,
     "entry_spacing": "standard",
     "dock": "left",
-    "button": true,
+    "button": true
   },
   "tabs": {
-    "git_status": false,
+    "git_status": false
   },
   "title_bar": {
-    "show_branch_status_icon": true,
+    "show_branch_status_icon": true
   },
   "status_bar": {
     "cursor_position_button": false,
     "active_encoding_button": "non_utf8",
-    "active_language_button": true,
-    "show_active_file": false,
+    "active_language_button": false,
+    "show_active_file": false
   },
   "search": {
-    "button": false,
+    "button": false
   },
   "debugger": {
-    "button": true,
+    "button": true
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000,
-    },
+      "milliseconds": 1000
+    }
   },
   "auto_update": false,
   "text_rendering_mode": "platform_default",
@@ -105,15 +106,15 @@
   "icon_theme": "Zed (Default)",
   "buffer_line_height": "comfortable",
   "buffer_font_weight": 200.0,
-  "buffer_font_family": "SF Mono",
+  "buffer_font_family": "Monaco",
   "ui_font_family": "SF Mono",
   "cli_default_open_behavior": "existing_window",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false,
+    "metrics": false
   },
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": true
   },
   "ui_font_size": 12.0,
   "buffer_font_size": 12.0,
