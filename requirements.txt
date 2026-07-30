@@ -9,5 +9,4 @@ seaborn
 scipy
 keras
 uv
-plotly
 tqdm
