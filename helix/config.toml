@@ -1,0 +1,43 @@
+# ~/.config/helix/config.toml
+
+# Select a built-in theme (e.g., catppuccin_mocha, kanagawa, tokyonight, gruvbox)
+theme = "jetbrains_dark"
+
+[editor]
+line-number = "absolute"   # Great for modal jump movements (or set to "absolute")
+mouse = true              # Enable mouse selection/scrolling
+scrolloff = 5             # Keep 5 lines above/below cursor while scrolling
+cursorline = true         # Highlight current line
+true-color = true      # Render crisp 24-bit RGB colors
+
+# Visual column indicators
+color-modes = true        # Color the statusline according to mode (Normal/Insert/Select)
+
+[editor.cursor-shape]
+insert = "block"            # Pipe cursor in Insert mode
+normal = "block"          # Block cursor in Normal mode
+select = "underline"      # Underline cursor in Selection mode
+
+[editor.file-picker]
+hidden = false            # Show hidden files (.gitignore, .env) in picker
+
+[editor.indent-guides]
+render = true             # Show subtle vertical indentation lines
+character = "│"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+# Custom Key Remaps (Helix uses Selection -> Action model)
+[keys.normal]
+# Quick save with Space + w
+"space" = { "w" = ":write", "q" = ":quit" }
+
+# Move lines up/down
+"A-j" = "move_line_down"
+"A-k" = "move_line_up"
