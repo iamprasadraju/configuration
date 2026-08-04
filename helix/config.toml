@@ -1,7 +1,5 @@
-# ~/.config/helix/config.toml
-
 # Select a built-in theme (e.g., catppuccin_mocha, kanagawa, tokyonight, gruvbox)
-theme = "jetbrains_dark"
+theme = "dark-plus"
 
 [editor]
 line-number = "absolute"   # Great for modal jump movements (or set to "absolute")
@@ -9,9 +7,10 @@ mouse = true              # Enable mouse selection/scrolling
 scrolloff = 5             # Keep 5 lines above/below cursor while scrolling
 cursorline = true         # Highlight current line
 true-color = true      # Render crisp 24-bit RGB colors
-
-# Visual column indicators
 color-modes = true        # Color the statusline according to mode (Normal/Insert/Select)
+clipboard-provider = "pasteboard"
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]
+
 
 [editor.cursor-shape]
 insert = "block"            # Pipe cursor in Insert mode
@@ -33,6 +32,8 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
+
+
 # Custom Key Remaps (Helix uses Selection -> Action model)
 [keys.normal]
 # Quick save with Space + w
@@ -41,3 +42,4 @@ mode.select = "SELECT"
 # Move lines up/down
 "A-j" = "move_line_down"
 "A-k" = "move_line_up"
+
