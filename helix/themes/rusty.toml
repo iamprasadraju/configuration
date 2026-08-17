@@ -1,0 +1,130 @@
+# rusty - minimal warm theme (royal red / brown / cream)
+
+"ui.background" = "bg"
+"ui.overlay" = { bg = "overlay" }
+
+"ui.text" = "cream"
+"ui.text.focus" = "cream"
+"ui.text.inactive" = "cream_faint"
+"ui.text.primary" = "cream"
+"ui.text.select" = { fg = "bg", bg = "cream" }
+
+"ui.cursor" = { fg = "bg", bg = "cream" }
+"ui.cursor.primary" = { fg = "bg", bg = "cream" }
+"ui.cursor.secondary" = { fg = "bg", bg = "brown" }
+"ui.cursor.match" = { fg = "cream", bg = "brown_dark" }
+"ui.cursorline" = "red_deep"
+"ui.cursorline.primary" = "red_deep"
+
+"ui.selection" = { fg = "cream", bg = "red" }
+"ui.selection.primary" = { fg = "cream", bg = "red_dark" }
+
+"ui.linenr" = "brown_dark"
+"ui.linenr.selected" = "cream"
+"ui.gutter" = "bg"
+
+"ui.statusline" = { fg = "cream", bg = "brown_dark" }
+"ui.statusline.inactive" = { fg = "cream_dim", bg = "panel" }
+"ui.statusline.separator" = { fg = "brown", bg = "brown_dark" }
+
+"ui.bufferline" = { fg = "cream_dim", bg = "panel" }
+"ui.bufferline.active" = { fg = "cream", bg = "red_dark" }
+"ui.bufferline.selected" = { fg = "cream", bg = "red_dark" }
+
+"ui.popup" = { fg = "cream", bg = "panel" }
+"ui.popup.info" = { fg = "cream", bg = "panel" }
+"ui.popup.debug" = { fg = "brown", bg = "panel" }
+"ui.window" = { fg = "brown", bg = "panel" }
+"ui.help" = { fg = "cream", bg = "panel" }
+
+"ui.menu" = { fg = "cream", bg = "panel" }
+"ui.menu.selected" = { fg = "cream", bg = "red" }
+"ui.menu.selected.primary" = { fg = "cream", bg = "red_dark" }
+"ui.menu.scroll" = "brown_dark"
+"ui.menu.scroll.focused" = "brown"
+"ui.picker" = { fg = "cream", bg = "panel" }
+"ui.picker.help" = { fg = "cream_dim", bg = "panel" }
+
+"ui.highlight" = { fg = "cream", bg = "red_dark" }
+"ui.highlight.frameborder" = "brown"
+
+"ui.virtual.whitespace" = "guide"
+"ui.virtual.indent-guide" = "guide"
+"ui.virtual.inlay-hints" = "cream_faint"
+"ui.virtual.wrap" = "brown_dark"
+
+"ui.diagnostics.error" = "error_red"
+"ui.diagnostics.warning" = "tan_soft"
+"ui.diagnostics.info" = "cream_dim"
+"ui.diagnostics.hint" = "cream_faint"
+"ui.diagnostics.unnecessary" = "brown_dark"
+
+"ui.info" = "tan_soft"
+"ui.error" = "error_red"
+"ui.warning" = "tan_soft"
+
+comment = "brown"
+keyword = "red"
+"keyword.directive" = "red"
+"keyword.control" = "red"
+"keyword.exception" = "red"
+"keyword.return" = "red"
+label = "red"
+namespace = "red"
+
+constant = "tan_soft"
+"constant.builtin" = "tan_soft"
+"constant.numeric" = "tan_soft"
+"constant.character" = "tan_soft"
+"constant.macro" = "tan_soft"
+boolean = "tan_soft"
+
+string = "tan"
+"string.special" = "tan_soft"
+"string.escape" = "red"
+"string.regexp" = "tan"
+
+type = "tan_bright"
+"type.builtin" = "tan_bright"
+
+function = { fg = "cream", modifiers = ["bold"] }
+"function.macro" = "tan_soft"
+"function.special" = { fg = "cream", modifiers = ["bold"] }
+"function.method" = "cream"
+
+variable = "cream"
+"variable.builtin" = "cream"
+"variable.parameter" = "cream"
+
+operator = "cream_dim"
+"operator.special" = "red"
+punctuation = "cream_dim"
+"punctuation.delimiter" = "cream_dim"
+"punctuation.bracket" = "cream_dim"
+"punctuation.special" = "tan_soft"
+
+"markup.heading" = { fg = "red", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link" = { fg = "tan_soft", underline = { style = "line" } }
+"markup.list" = "red"
+"markup.quote" = "brown"
+"markup.raw" = "tan"
+
+[palette]
+bg          = "#1C1410"
+panel       = "#241A14"
+overlay     = "#0F0A07"
+red         = "#B53A3A"
+red_dark    = "#8E2B2B"
+red_deep    = "#401F1F"
+brown       = "#9C6B3F"
+brown_dark  = "#6E4A2A"
+cream       = "#EDE3D5"
+cream_dim   = "#A89883"
+cream_faint = "#8F8170"
+tan         = "#D9C7A8"
+tan_bright  = "#D9A05B"
+tan_soft    = "#C98F5E"
+guide       = "#3A2B1E"
+error_red   = "#D96A6A"
