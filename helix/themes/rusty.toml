@@ -1,6 +1,7 @@
-# rusty - minimal warm theme (royal red / brown / cream)
+# rusty - minimal warm theme (royal red / muted royal accents / brown / cream)
 
 "ui.background" = "bg"
+"ui.background.separator" = "guide"
 "ui.overlay" = { bg = "overlay" }
 
 "ui.text" = "cream"
@@ -8,13 +9,24 @@
 "ui.text.inactive" = "cream_faint"
 "ui.text.primary" = "cream"
 "ui.text.select" = { fg = "bg", bg = "cream" }
+"ui.text.directory" = "sapphire"
+"ui.text.info" = { fg = "tan_soft", modifiers = ["bold"] }
 
 "ui.cursor" = { fg = "bg", bg = "cream" }
+"ui.cursor.normal" = { fg = "bg", bg = "cream" }
+"ui.cursor.insert" = { fg = "bg", bg = "gold" }
+"ui.cursor.select" = { fg = "bg", bg = "wine" }
 "ui.cursor.primary" = { fg = "bg", bg = "cream" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "cream" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "gold" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "wine" }
 "ui.cursor.secondary" = { fg = "bg", bg = "brown" }
 "ui.cursor.match" = { fg = "cream", bg = "brown_dark" }
 "ui.cursorline" = "red_deep"
 "ui.cursorline.primary" = "red_deep"
+"ui.cursorline.secondary" = "red_deep"
+"ui.cursorcolumn.primary" = "red_deep"
+"ui.cursorcolumn.secondary" = "red_deep"
 
 "ui.selection" = { fg = "cream", bg = "red" }
 "ui.selection.primary" = { fg = "cream", bg = "red_dark" }
@@ -22,14 +34,19 @@
 "ui.linenr" = "brown_dark"
 "ui.linenr.selected" = "cream"
 "ui.gutter" = "bg"
+"ui.gutter.selected" = "red_deep"
 
 "ui.statusline" = { fg = "cream", bg = "brown_dark" }
 "ui.statusline.inactive" = { fg = "cream_dim", bg = "panel" }
 "ui.statusline.separator" = { fg = "brown", bg = "brown_dark" }
+"ui.statusline.normal" = { fg = "cream", bg = "red", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "gold", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "cream", bg = "mauve", modifiers = ["bold"] }
 
 "ui.bufferline" = { fg = "cream_dim", bg = "panel" }
 "ui.bufferline.active" = { fg = "cream", bg = "red_dark" }
 "ui.bufferline.selected" = { fg = "cream", bg = "red_dark" }
+"ui.bufferline.background" = { bg = "panel" }
 
 "ui.popup" = { fg = "cream", bg = "panel" }
 "ui.popup.info" = { fg = "cream", bg = "panel" }
@@ -44,14 +61,24 @@
 "ui.menu.scroll.focused" = "brown"
 "ui.picker" = { fg = "cream", bg = "panel" }
 "ui.picker.help" = { fg = "cream_dim", bg = "panel" }
+"ui.picker.header" = { underline = { style = "line" } }
+"ui.picker.header.column" = { fg = "cream_dim", underline = { style = "line" } }
+"ui.picker.header.column.active" = { fg = "cream", modifiers = ["bold"], underline = { style = "line" } }
 
 "ui.highlight" = { fg = "cream", bg = "red_dark" }
-"ui.highlight.frameborder" = "brown"
+"ui.highlight.frameline" = { fg = "cream_dim" }
+
+"ui.debug.breakpoint" = { fg = "red", modifiers = ["bold"] }
+"ui.debug.active" = { fg = "wine" }
 
 "ui.virtual.whitespace" = "guide"
 "ui.virtual.indent-guide" = "guide"
-"ui.virtual.inlay-hints" = "cream_faint"
+"ui.virtual.inlay-hint" = "cream_faint"
+"ui.virtual.inlay-hint.parameter" = "cream_faint"
+"ui.virtual.inlay-hint.type" = "cream_faint"
 "ui.virtual.wrap" = "brown_dark"
+"ui.virtual.ruler" = { bg = "dim_brown" }
+"ui.virtual.jump-label" = { fg = "red", modifiers = ["bold"] }
 
 "ui.diagnostics.error" = "error_red"
 "ui.diagnostics.warning" = "tan_soft"
@@ -63,68 +90,163 @@
 "ui.error" = "error_red"
 "ui.warning" = "tan_soft"
 
-comment = "brown"
+diagnostic = { underline = { color = "cream_faint", style = "curl" } }
+"diagnostic.error" = { underline = { color = "error_red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "gold", style = "curl" } }
+"diagnostic.info" = { underline = { color = "sapphire", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "cream_dim", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"diff.plus" = { fg = "tan_bright", bg = "diff_bg_plus" }
+"diff.plus.gutter" = "tan_bright"
+"diff.minus" = { fg = "wine", bg = "diff_bg_minus" }
+"diff.minus.gutter" = "wine"
+"diff.delta" = { fg = "gold", bg = "diff_bg_delta" }
+"diff.delta.gutter" = "gold"
+"diff.moved" = "rose"
+"diff.conflict" = { fg = "red", modifiers = ["bold"] }
+
+tabstop = { underline = { color = "cream", style = "line" } }
+definition = { underline = { color = "cream_dim", style = "line" } }
+
+attribute = { fg = "mauve", modifiers = ["italic"] }
+annotation = { fg = "tan_soft", modifiers = ["italic"] }
+
+comment = "violet"
+"comment.line" = "violet"
+"comment.block" = { fg = "violet_dim", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "violet", modifiers = ["italic"] }
+"comment.documentation" = { fg = "violet", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "violet_dim", modifiers = ["italic"] }
+"comment.unused" = { fg = "cream_faint", modifiers = ["crossed_out"] }
+
 keyword = "red"
-"keyword.directive" = "red"
+"keyword.directive" = "silver"
 "keyword.control" = "red"
-"keyword.exception" = "red"
-"keyword.return" = "red"
+"keyword.control.conditional" = "red"
+"keyword.control.repeat" = "red"
+"keyword.control.import" = "silver"
+"keyword.control.return" = "wine"
+"keyword.control.exception" = "wine"
+"keyword.operator" = "mauve"
+"keyword.function" = "red"
+"keyword.storage" = "red_dark"
+"keyword.storage.type" = "red_dark"
+"keyword.storage.modifier" = "mauve"
 label = "red"
 namespace = "red"
 
-constant = "tan_soft"
-"constant.builtin" = "tan_soft"
-"constant.numeric" = "tan_soft"
-"constant.character" = "tan_soft"
+constant = "copper"
+"constant.builtin" = "copper"
+"constant.builtin.boolean" = "copper"
+"constant.numeric" = "copper"
+"constant.numeric.integer" = "copper"
+"constant.numeric.float" = "copper"
+"constant.character" = "copper"
+"constant.character.escape" = "rose"
 "constant.macro" = "tan_soft"
-boolean = "tan_soft"
+boolean = "copper"
+constructor = "copper"
 
 string = "tan"
 "string.special" = "tan_soft"
-"string.escape" = "red"
+"string.special.path" = "tan_soft"
+"string.special.url" = { fg = "sapphire", underline = { style = "line" } }
+"string.special.symbol" = "rose"
+"string.escape" = "rose"
 "string.regexp" = "tan"
 
 type = "tan_bright"
 "type.builtin" = "tan_bright"
+"type.parameter" = { fg = "clay", modifiers = ["italic"] }
+"type.enum.variant" = { fg = "mauve", modifiers = ["italic"] }
 
 function = { fg = "cream", modifiers = ["bold"] }
+"function.builtin" = "ivory"
 "function.macro" = "tan_soft"
 "function.special" = { fg = "cream", modifiers = ["bold"] }
 "function.method" = "cream"
+"function.method.private" = "cream_dim"
 
 variable = "cream"
-"variable.builtin" = "cream"
-"variable.parameter" = "cream"
+"variable.builtin" = "red"
+"variable.parameter" = { fg = "clay", modifiers = ["italic"] }
+"variable.other.member" = "clay"
+"variable.other.member.private" = "cream_dim"
 
 operator = "cream_dim"
 "operator.special" = "red"
 punctuation = "cream_dim"
 "punctuation.delimiter" = "cream_dim"
 "punctuation.bracket" = "cream_dim"
-"punctuation.special" = "tan_soft"
+"punctuation.special" = "copper"
+
+module = "tan_bright"
+special = "rose"
+tag = "red"
+"tag.builtin" = "red_dark"
 
 "markup.heading" = { fg = "red", modifiers = ["bold"] }
+"markup.heading.marker" = "red_dark"
+"markup.heading.1" = { fg = "red", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "copper", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "tan_bright", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "ivory", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "gold", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "cream_dim", modifiers = ["bold"] }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
-"markup.link" = { fg = "tan_soft", underline = { style = "line" } }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.list" = "red"
+"markup.list.unnumbered" = "red"
+"markup.list.numbered" = "copper"
+"markup.list.checked" = "gold"
+"markup.list.unchecked" = "cream_faint"
+"markup.link" = { fg = "tan_soft", underline = { style = "line" } }
+"markup.link.url" = { fg = "sapphire", underline = { style = "line" } }
+"markup.link.label" = "copper"
+"markup.link.text" = "tan_soft"
 "markup.quote" = "brown"
 "markup.raw" = "tan"
+"markup.raw.inline" = "tan"
+"markup.raw.block" = "tan"
+"markup.normal.completion" = "cream"
+"markup.normal.hover" = "cream"
+"markup.heading.completion" = { fg = "red", modifiers = ["bold"] }
+"markup.heading.hover" = { fg = "red", modifiers = ["bold"] }
+"markup.raw.inline.completion" = "tan"
+"markup.raw.inline.hover" = "tan"
 
 [palette]
-bg          = "#1C1410"
-panel       = "#241A14"
+bg          = "#221713"
+panel       = "#2B1D17"
 overlay     = "#0F0A07"
-red         = "#B53A3A"
-red_dark    = "#8E2B2B"
-red_deep    = "#401F1F"
-brown       = "#9C6B3F"
-brown_dark  = "#6E4A2A"
-cream       = "#EDE3D5"
-cream_dim   = "#A89883"
-cream_faint = "#8F8170"
-tan         = "#D9C7A8"
-tan_bright  = "#D9A05B"
-tan_soft    = "#C98F5E"
-guide       = "#3A2B1E"
-error_red   = "#D96A6A"
+guide       = "#44301F"
+dim_brown   = "#573F2C"
+red         = "#E2543F"
+red_dark    = "#B03A28"
+red_deep    = "#4A2017"
+wine        = "#A93E3E"
+rose        = "#D77A70"
+brown       = "#A86E48"
+brown_dark  = "#7A4F30"
+copper      = "#D98E5A"
+gold        = "#E0B36A"
+tan         = "#E8D5B5"
+tan_bright  = "#E3A85C"
+tan_soft    = "#D19A62"
+clay        = "#BC8A6E"
+sapphire    = "#6E97B8"
+silver      = "#C9C4BA"
+violet      = "#8E7FA8"
+violet_dim  = "#7B6D95"
+mauve       = "#A789B8"
+ivory       = "#EADFCC"
+cream       = "#F5EBDB"
+cream_dim   = "#BBA98F"
+cream_faint = "#9A8A73"
+error_red   = "#EF6A5A"
+diff_bg_plus   = "#33291C"
+diff_bg_minus  = "#3A1F1F"
+diff_bg_delta  = "#3A3020"
