@@ -1,4 +1,4 @@
-# rusty - minimal warm theme (royal red / brown / cream)
+# rusty_grey - minimal warm theme, dark grey chrome (royal red / brown / cream)
 
 "ui.background" = { bg = "bg" }
 "ui.overlay" = { bg = "overlay" }
@@ -7,58 +7,58 @@
 "ui.text.focus" = "cream"
 "ui.text.inactive" = "cream_faint"
 "ui.text.primary" = "cream"
-"ui.text.select" = { fg = "bg", bg = "cream" }
+"ui.text.select" = { fg = "bg", bg = "purple_light" }
 
 "ui.cursor" = { fg = "bg", bg = "cream" }
 "ui.cursor.primary" = { fg = "bg", bg = "cream" }
 "ui.cursor.primary.insert" = { fg = "bg", bg = "red" }
-"ui.cursor.secondary" = { fg = "bg", bg = "brown" }
-"ui.cursor.match" = { fg = "cream", bg = "brown_dark" }
+"ui.cursor.secondary" = { fg = "bg", bg = "gray_mid" }
+"ui.cursor.match" = { fg = "cream", bg = "chrome" }
 "ui.cursorline" = "red_deep"
 "ui.cursorline.primary" = "red_deep"
 
-"ui.selection" = { fg = "cream", bg = "red" }
-"ui.selection.primary" = { fg = "cream", bg = "red_dark" }
+"ui.selection" = { fg = "bg", bg = "purple_light" }
+"ui.selection.primary" = { fg = "bg", bg = "purple_light" }
 
-"ui.linenr" = "brown_dark"
+"ui.linenr" = "linenr"
 "ui.linenr.selected" = "cream"
 "ui.gutter" = "bg"
 
-"ui.statusline" = { fg = "cream", bg = "brown_dark" }
+"ui.statusline" = { fg = "cream", bg = "chrome" }
 "ui.statusline.inactive" = { fg = "cream_dim", bg = "panel" }
-"ui.statusline.separator" = { fg = "brown", bg = "brown_dark" }
+"ui.statusline.separator" = { fg = "linenr", bg = "chrome" }
 
 "ui.bufferline" = { fg = "cream_dim", bg = "panel" }
-"ui.bufferline.active" = { fg = "cream", bg = "red_dark" }
-"ui.bufferline.selected" = { fg = "cream", bg = "red_dark" }
+"ui.bufferline.active" = { fg = "cream", bg = "chrome" }
+"ui.bufferline.selected" = { fg = "cream", bg = "chrome" }
 
 "ui.popup" = { fg = "cream", bg = "panel" }
 "ui.popup.info" = { fg = "cream", bg = "panel" }
-"ui.popup.debug" = { fg = "brown", bg = "panel" }
-"ui.window" = { fg = "brown", bg = "panel" }
+"ui.popup.debug" = { fg = "cream_dim", bg = "panel" }
+"ui.window" = { fg = "cream_dim", bg = "panel" }
 "ui.help" = { fg = "cream", bg = "panel" }
 
 "ui.menu" = { fg = "cream", bg = "panel" }
-"ui.menu.selected" = { fg = "cream", bg = "red" }
-"ui.menu.selected.primary" = { fg = "cream", bg = "red_dark" }
-"ui.menu.scroll" = "brown_dark"
-"ui.menu.scroll.focused" = "brown"
+"ui.menu.selected" = { fg = "cream", bg = "gray_mid" }
+"ui.menu.selected.primary" = { fg = "cream", bg = "chrome" }
+"ui.menu.scroll" = "linenr"
+"ui.menu.scroll.focused" = "gray_mid"
 "ui.picker" = { fg = "cream", bg = "panel" }
 "ui.picker.help" = { fg = "cream_dim", bg = "panel" }
 
-"ui.highlight" = { fg = "cream", bg = "red_dark" }
-"ui.highlight.frameborder" = "brown"
+"ui.highlight" = { fg = "cream", bg = "chrome" }
+"ui.highlight.frameborder" = "linenr"
 
 "ui.virtual.whitespace" = "guide"
 "ui.virtual.indent-guide" = "guide"
 "ui.virtual.inlay-hints" = "cream_faint"
-"ui.virtual.wrap" = "brown_dark"
+"ui.virtual.wrap" = "linenr"
 
 "ui.diagnostics.error" = "error_red"
 "ui.diagnostics.warning" = "tan_soft"
 "ui.diagnostics.info" = "cream_dim"
 "ui.diagnostics.hint" = "cream_faint"
-"ui.diagnostics.unnecessary" = "brown_dark"
+"ui.diagnostics.unnecessary" = "linenr"
 
 "ui.info" = "tan_soft"
 "ui.error" = "error_red"
@@ -119,15 +119,16 @@ punctuation = "cream_dim"
 "markup.raw" = "tan"
 
 [palette]
-bg          = "#1C1410"
-panel       = "#241A14"
-overlay     = "#0F0A07"
+bg          = "#202020"
+panel       = "#424242"
+overlay     = "#191919"
 red         = "#B53A3A"
 red_dark    = "#8E2B2B"
-red_deep    = "#401F1F"
+red_deep    = "#4A4A4A"
 brown       = "#9C6B3F"
 brown_dark  = "#6E4A2A"
 purple      = "#7851A9"
+purple_light = "#B39DDB"
 silver      = "#A0A6AF"
 cream       = "#EDE3D5"
 cream_dim   = "#A89883"
@@ -135,5 +136,8 @@ cream_faint = "#8F8170"
 tan         = "#D9C7A8"
 tan_bright  = "#D9A05B"
 tan_soft    = "#C98F5E"
-guide       = "#3A2B1E"
+guide       = "#4A4A4A"
+chrome      = "#484848"
+gray_mid    = "#525252"
+linenr      = "#808080"
 error_red   = "#D96A6A"

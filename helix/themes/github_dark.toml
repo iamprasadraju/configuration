@@ -1,0 +1,141 @@
+# github_dark - GitHub Dark Default (exact colors from primer primitives + github-vscode-theme, colors only)
+
+"ui.background" = { bg = "bg" }
+"ui.overlay" = { bg = "inset" }
+
+"ui.text" = "text"
+"ui.text.focus" = "text"
+"ui.text.inactive" = "muted"
+"ui.text.primary" = "text"
+"ui.text.select" = { fg = "text", bg = "selection" }
+
+"ui.cursor" = { fg = "bg", bg = "text" }
+"ui.cursor.primary" = { fg = "bg", bg = "text" }
+"ui.cursor.secondary" = { fg = "bg", bg = "panel" }
+"ui.cursor.match" = { fg = "text", bg = "emphasis" }
+"ui.cursorline" = "panel"
+"ui.cursorline.primary" = "panel"
+
+"ui.selection" = { fg = "text", bg = "selection" }
+"ui.selection.primary" = { fg = "text", bg = "selection" }
+
+"ui.linenr" = "linenr"
+"ui.linenr.selected" = "text"
+"ui.gutter" = "bg"
+
+"ui.statusline" = { fg = "text", bg = "panel" }
+"ui.statusline.inactive" = { fg = "muted", bg = "panel" }
+"ui.statusline.separator" = { fg = "muted", bg = "panel" }
+
+"ui.bufferline" = { fg = "muted", bg = "panel" }
+"ui.bufferline.active" = { fg = "text", bg = "emphasis" }
+"ui.bufferline.selected" = { fg = "text", bg = "emphasis" }
+
+"ui.popup" = { fg = "text", bg = "panel" }
+"ui.popup.info" = { fg = "text", bg = "panel" }
+"ui.popup.debug" = { fg = "muted", bg = "panel" }
+"ui.window" = { fg = "muted", bg = "panel" }
+"ui.help" = { fg = "text", bg = "panel" }
+
+"ui.menu" = { fg = "text", bg = "panel" }
+"ui.menu.selected" = { fg = "text", bg = "emphasis" }
+"ui.menu.selected.primary" = { fg = "text", bg = "emphasis" }
+"ui.menu.scroll" = "linenr"
+"ui.menu.scroll.focused" = "muted"
+"ui.picker" = { fg = "text", bg = "panel" }
+"ui.picker.help" = { fg = "muted", bg = "panel" }
+
+"ui.highlight" = { fg = "text", bg = "emphasis" }
+"ui.highlight.frameborder" = "muted"
+
+"ui.virtual.whitespace" = "guide"
+"ui.virtual.indent-guide" = "guide"
+"ui.virtual.inlay-hints" = "muted"
+"ui.virtual.wrap" = "linenr"
+
+"ui.diagnostics.error" = "error"
+"ui.diagnostics.warning" = "warning"
+"ui.diagnostics.info" = "info"
+"ui.diagnostics.hint" = "muted"
+"ui.diagnostics.unnecessary" = "linenr"
+
+"ui.info" = "info"
+"ui.error" = "error"
+"ui.warning" = "warning"
+
+comment = "comment"
+constructor = "orange"
+attribute = "text"
+keyword = "red"
+"keyword.storage" = "red"
+"keyword.operator" = "red"
+"keyword.directive" = "red"
+"keyword.control" = "red"
+"keyword.control.import" = "red"
+"keyword.exception" = "red"
+"keyword.return" = "red"
+label = "red"
+namespace = "blue"
+
+constant = "blue"
+"constant.builtin" = "blue"
+"constant.numeric" = "blue"
+"constant.character" = "red"
+"constant.macro" = "blue"
+boolean = "blue"
+
+string = "string"
+"string.special" = "string"
+"string.escape" = "string"
+"string.regexp" = "string"
+
+type = "orange"
+"type.builtin" = "orange"
+
+function = "purple"
+"function.macro" = "purple"
+"function.special" = "purple"
+"function.method" = "purple"
+"function.builtin" = "purple"
+
+variable = "text"
+"variable.builtin" = "blue"
+"variable.parameter" = "text"
+"variable.other.member" = "orange"
+
+operator = "red"
+"operator.special" = "red"
+punctuation = "text"
+"punctuation.delimiter" = "text"
+"punctuation.bracket" = "text"
+"punctuation.special" = "text"
+
+"markup.heading" = "text"
+"markup.bold" = "text"
+"markup.italic" = "text"
+"markup.link" = "blue"
+"markup.list" = "text"
+"markup.quote" = "comment"
+"markup.raw" = "string"
+
+[palette]
+bg        = "#0d1117"
+inset     = "#010409"
+panel     = "#161b22"
+emphasis  = "#21262d"
+border    = "#3d444d"
+text      = "#e6edf3"
+muted     = "#7d8590"
+linenr    = "#6e7681"
+comment   = "#8b949e"
+red       = "#ff7b72"
+orange    = "#ffa657"
+warning   = "#d29922"
+green     = "#7ee787"
+blue      = "#79c0ff"
+string    = "#a5d6ff"
+purple    = "#d2a8ff"
+info      = "#388bfd"
+error     = "#f85149"
+selection = "#1A53AB"
+guide     = "#21262d"

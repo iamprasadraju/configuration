@@ -1,0 +1,136 @@
+# geohot - George Hotz's setup: Vim default colorscheme + green comments (his .vimrc)
+# terminal: Gogh "Geohot" charcoal #1F1E1F bg, white fg; UI chrome from his .tmux.conf (colour234/tan/green)
+
+"ui.background" = { bg = "bg" }
+"ui.overlay" = { bg = "bg" }
+
+"ui.text" = "fg"
+"ui.text.focus" = "fg"
+"ui.text.inactive" = "dim"
+"ui.text.primary" = "fg"
+"ui.text.select" = { fg = "bg", bg = "green" }
+
+"ui.cursor" = { fg = "bg", bg = "green" }
+"ui.cursor.primary" = { fg = "bg", bg = "green" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "green" }
+"ui.cursor.secondary" = { fg = "bg", bg = "panel" }
+"ui.cursor.match" = { fg = "bg", bg = "cyan" }
+"ui.cursorline" = "bg"
+"ui.cursorline.primary" = "bg"
+
+"ui.selection" = { fg = "bg", bg = "green" }
+"ui.selection.primary" = { fg = "bg", bg = "green" }
+
+"ui.linenr" = "yellow"
+"ui.linenr.selected" = "yellow"
+"ui.gutter" = "bg"
+
+"ui.statusline" = { fg = "tan", bg = "chrome" }
+"ui.statusline.inactive" = { fg = "dim", bg = "chrome" }
+"ui.statusline.separator" = { fg = "tan", bg = "chrome" }
+
+"ui.bufferline" = { fg = "dim", bg = "chrome" }
+"ui.bufferline.active" = { fg = "bright", bg = "chrome" }
+"ui.bufferline.selected" = { fg = "bright", bg = "chrome" }
+"ui.bufferline.background" = "chrome"
+
+"ui.popup" = { fg = "fg", bg = "panel" }
+"ui.popup.info" = { fg = "fg", bg = "panel" }
+"ui.popup.debug" = { fg = "dim", bg = "panel" }
+"ui.window" = { fg = "dim", bg = "panel" }
+"ui.help" = { fg = "fg", bg = "panel" }
+
+"ui.menu" = { fg = "fg", bg = "panel" }
+"ui.menu.selected" = { fg = "bg", bg = "fg" }
+"ui.menu.selected.primary" = { fg = "bg", bg = "fg" }
+"ui.menu.scroll" = "dim"
+"ui.menu.scroll.focused" = "dim"
+"ui.picker" = { fg = "fg", bg = "panel" }
+"ui.picker.help" = { fg = "dim", bg = "panel" }
+
+"ui.highlight" = { fg = "bg", bg = "yellow" }
+"ui.highlight.frameborder" = "dim"
+
+"ui.virtual.whitespace" = "panel"
+"ui.virtual.indent-guide" = "panel"
+"ui.virtual.inlay-hints" = "dim"
+"ui.virtual.wrap" = "dim"
+
+"ui.diagnostics.error" = "red"
+"ui.diagnostics.warning" = "yellow"
+"ui.diagnostics.info" = "cyan"
+"ui.diagnostics.hint" = "dim"
+"ui.diagnostics.unnecessary" = "dim"
+
+"ui.info" = "cyan"
+"ui.error" = "red"
+"ui.warning" = "yellow"
+
+comment = "green"
+constructor = "cyan"
+attribute = "cyan"
+keyword = "yellow"
+"keyword.storage" = "green"
+"keyword.operator" = "yellow"
+"keyword.directive" = "magenta"
+"keyword.control" = "yellow"
+"keyword.control.import" = "yellow"
+"keyword.exception" = "yellow"
+"keyword.return" = "yellow"
+label = "yellow"
+namespace = "cyan"
+
+constant = "magenta"
+"constant.builtin" = "magenta"
+"constant.numeric" = "magenta"
+"constant.character" = "red"
+"constant.macro" = "magenta"
+boolean = "magenta"
+
+string = "red"
+"string.special" = "magenta"
+"string.escape" = "magenta"
+"string.regexp" = "red"
+
+type = "green"
+"type.builtin" = "green"
+
+function = "cyan"
+"function.macro" = "magenta"
+"function.special" = "magenta"
+"function.method" = "cyan"
+
+variable = "cyan"
+"variable.builtin" = "cyan"
+"variable.other.member" = "cyan"
+"variable.parameter" = "cyan"
+
+operator = "yellow"
+"operator.special" = "yellow"
+punctuation = "fg"
+"punctuation.delimiter" = "fg"
+"punctuation.bracket" = "fg"
+"punctuation.special" = "magenta"
+
+"markup.heading" = "cyan"
+"markup.bold" = "fg"
+"markup.italic" = "fg"
+"markup.link" = "magenta"
+"markup.list" = "yellow"
+"markup.quote" = "green"
+"markup.raw" = "fg"
+
+[palette]
+bg       = "#1F1E1F"
+fg       = "#FFFFFF"
+dim      = "#808080"
+chrome   = "#1C1C1C"
+panel    = "#3A3A3A"
+tan      = "#AF875F"
+bright   = "#EEEEEE"
+maroon   = "#800000"
+red      = "#CD0000"
+green    = "#00CD00"
+yellow   = "#CDCD00"
+cyan     = "#00CDCD"
+magenta  = "#CD00CD"
