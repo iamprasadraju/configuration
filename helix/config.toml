@@ -1,45 +1,56 @@
-# Select a built-in theme (e.g., catppuccin_mocha, kanagawa, tokyonight, gruvbox)
-theme = "dark-plus"
+# Color Scheme
+theme = "geohot"
 
 [editor]
-line-number = "absolute"   # Great for modal jump movements (or set to "absolute")
-mouse = true              # Enable mouse selection/scrolling
-scrolloff = 5             # Keep 5 lines above/below cursor while scrolling
-cursorline = true         # Highlight current line
-true-color = true      # Render crisp 24-bit RGB colors
-color-modes = true        # Color the statusline according to mode (Normal/Insert/Select)
+line-number = "absolute"
+mouse = true
+true-color = true
+auto-save = true
+bufferline = "always"
 clipboard-provider = "pasteboard"
+color-modes = true
 gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]
 
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "↩ "
 
 [editor.cursor-shape]
-insert = "block"            # Pipe cursor in Insert mode
-normal = "block"          # Block cursor in Normal mode
-select = "underline"      # Underline cursor in Selection mode
-
-[editor.file-picker]
-hidden = false            # Show hidden files (.gitignore, .env) in picker
+normal = "block"
+insert = "block"
+select = "underline"
 
 [editor.indent-guides]
-render = true             # Show subtle vertical indentation lines
+render = false
 character = "│"
 
-[editor.statusline]
-left = ["mode", "spinner", "file-name", "file-modification-indicator"]
-center = []
-right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+[editor.lsp]
+display-inlay-hints = false
+snippets = true
 
+[editor.file-picker]
+hidden = false
 
+[editor.inline-diagnostics]
+cursor-line = "disable"
 
-# Custom Key Remaps (Helix uses Selection -> Action model)
+# Keybindings
 [keys.normal]
-# Quick save with Space + w
-"space" = { "w" = ":write", "q" = ":quit" }
+# Add quick save/quit without overwriting the native Space leader menu
+"space"."w" = ":write"
+"space"."q" = ":quit"
 
-# Move lines up/down
+# Buffer Management
+"g" = { "]" = ":buffer-next", "[" = ":buffer-previous" }
+"A-=" = ":write-all"
+
+# Function Navigation
+"tab" = "goto_next_function"
+"S-tab" = "goto_prev_function"
+
+# Move Lines Up/Down
 "A-j" = "move_line_down"
 "A-k" = "move_line_up"
 
+[keys.insert]
+ins = "normal_mode"

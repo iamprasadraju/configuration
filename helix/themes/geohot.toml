@@ -1,5 +1,7 @@
-# geohot - George Hotz's setup: Vim default colorscheme + green comments (his .vimrc)
-# terminal: Gogh "Geohot" charcoal #1F1E1F bg, white fg; UI chrome from his .tmux.conf (colour234/tan/green)
+# geohot - exact replica of George Hotz's vim setup (github.com/geohot/configuration)
+# vim: default colorscheme + "highlight Comment ctermfg=green", no cursorline, hlsearch on
+# terminal: classic Geohot charcoal palette (#1F1E1F bg, #FFFFFF fg)
+# UI chrome from his .tmux.conf: status-bg colour234 #1C1C1C, status-fg colour137 #AF875F
 
 "ui.background" = { bg = "bg" }
 "ui.overlay" = { bg = "bg" }
@@ -8,18 +10,18 @@
 "ui.text.focus" = "fg"
 "ui.text.inactive" = "dim"
 "ui.text.primary" = "fg"
-"ui.text.select" = { fg = "bg", bg = "green" }
+"ui.text.select" = { fg = "bg", bg = "fg" }
 
-"ui.cursor" = { fg = "bg", bg = "green" }
-"ui.cursor.primary" = { fg = "bg", bg = "green" }
-"ui.cursor.primary.insert" = { fg = "bg", bg = "green" }
-"ui.cursor.secondary" = { fg = "bg", bg = "panel" }
+"ui.cursor" = { fg = "bg", bg = "cursor" }
+"ui.cursor.primary" = { fg = "bg", bg = "cursor" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "cursor" }
+"ui.cursor.secondary" = { fg = "bg", bg = "dim" }
 "ui.cursor.match" = { fg = "bg", bg = "cyan" }
 "ui.cursorline" = "bg"
 "ui.cursorline.primary" = "bg"
 
-"ui.selection" = { fg = "bg", bg = "green" }
-"ui.selection.primary" = { fg = "bg", bg = "green" }
+"ui.selection" = { fg = "bg", bg = "fg" }
+"ui.selection.primary" = { fg = "bg", bg = "fg" }
 
 "ui.linenr" = "yellow"
 "ui.linenr.selected" = "yellow"
@@ -30,8 +32,8 @@
 "ui.statusline.separator" = { fg = "tan", bg = "chrome" }
 
 "ui.bufferline" = { fg = "dim", bg = "chrome" }
-"ui.bufferline.active" = { fg = "bright", bg = "chrome" }
-"ui.bufferline.selected" = { fg = "bright", bg = "chrome" }
+"ui.bufferline.active" = { fg = "fg", bg = "chrome" }
+"ui.bufferline.selected" = { fg = "fg", bg = "chrome" }
 "ui.bufferline.background" = "chrome"
 
 "ui.popup" = { fg = "fg", bg = "panel" }
@@ -48,11 +50,11 @@
 "ui.picker" = { fg = "fg", bg = "panel" }
 "ui.picker.help" = { fg = "dim", bg = "panel" }
 
-"ui.highlight" = { fg = "bg", bg = "yellow" }
+"ui.highlight" = { fg = "bg", bg = "fg" }
 "ui.highlight.frameborder" = "dim"
 
-"ui.virtual.whitespace" = "panel"
-"ui.virtual.indent-guide" = "panel"
+"ui.virtual.whitespace" = "dim"
+"ui.virtual.indent-guide" = "dim"
 "ui.virtual.inlay-hints" = "dim"
 "ui.virtual.wrap" = "dim"
 
@@ -68,42 +70,41 @@
 
 comment = "green"
 constructor = "cyan"
-attribute = "cyan"
+attribute = "magenta"
+namespace = "fg"
 keyword = "yellow"
 "keyword.storage" = "green"
 "keyword.operator" = "yellow"
 "keyword.directive" = "magenta"
 "keyword.control" = "yellow"
-"keyword.control.import" = "yellow"
+"keyword.control.import" = "magenta"
 "keyword.exception" = "yellow"
 "keyword.return" = "yellow"
 label = "yellow"
-namespace = "cyan"
+type = "green"
+"type.builtin" = "green"
 
-constant = "magenta"
-"constant.builtin" = "magenta"
-"constant.numeric" = "magenta"
+constant = "red"
+"constant.builtin" = "red"
+"constant.numeric" = "red"
 "constant.character" = "red"
 "constant.macro" = "magenta"
-boolean = "magenta"
+boolean = "red"
 
 string = "red"
 "string.special" = "magenta"
 "string.escape" = "magenta"
 "string.regexp" = "red"
 
-type = "green"
-"type.builtin" = "green"
-
 function = "cyan"
 "function.macro" = "magenta"
 "function.special" = "magenta"
 "function.method" = "cyan"
 
-variable = "cyan"
-"variable.builtin" = "cyan"
-"variable.other.member" = "cyan"
-"variable.parameter" = "cyan"
+variable = "fg"
+"variable.builtin" = "fg"
+"variable.other.member" = "fg"
+"variable.parameter" = "fg"
 
 operator = "yellow"
 "operator.special" = "yellow"
@@ -121,16 +122,15 @@ punctuation = "fg"
 "markup.raw" = "fg"
 
 [palette]
-bg       = "#1F1E1F"
+bg       = "#000000"
 fg       = "#FFFFFF"
-dim      = "#808080"
+cursor   = "#4C4C4C"
+dim      = "#707070"
 chrome   = "#1C1C1C"
-panel    = "#3A3A3A"
 tan      = "#AF875F"
-bright   = "#EEEEEE"
-maroon   = "#800000"
-red      = "#CD0000"
-green    = "#00CD00"
-yellow   = "#CDCD00"
-cyan     = "#00CDCD"
-magenta  = "#CD00CD"
+panel    = "#626262"
+red      = "#822121"
+green    = "#00A800"
+yellow   = "#B0B000"
+cyan     = "#20B0B0"
+magenta  = "#B020C0"
