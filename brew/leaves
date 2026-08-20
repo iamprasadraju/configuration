@@ -2,6 +2,7 @@ anomalyco/tap/opencode
 helix
 htop
 node
+r
 ruby
 tmux
-r
+uv
