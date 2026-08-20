@@ -1,3 +1,3 @@
 #!/bin/bash
 brew leaves > leaves
-brew casks list > casks
+brew list --casks  > casks
