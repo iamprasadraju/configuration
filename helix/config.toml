@@ -7,9 +7,10 @@ mouse = true
 true-color = true
 auto-save = true
 bufferline = "always"
-clipboard-provider = "pasteboard"
 color-modes = true
-gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]
+gutters = ["diff", "spacer", "line-numbers", "spacer"]
+clipboard-provider = "pasteboard"  # Correctly activates native macOS clipboard handling
+
 
 [editor.soft-wrap]
 enable = true
@@ -25,7 +26,7 @@ render = false
 character = "│"
 
 [editor.lsp]
-display-inlay-hints = false
+enable = false
 snippets = true
 
 [editor.file-picker]
@@ -36,19 +37,12 @@ cursor-line = "disable"
 
 # Keybindings
 [keys.normal]
-# Add quick save/quit without overwriting the native Space leader menu
 "space"."w" = ":write"
 "space"."q" = ":quit"
-
-# Buffer Management
 "g" = { "]" = ":buffer-next", "[" = ":buffer-previous" }
 "A-=" = ":write-all"
-
-# Function Navigation
 "tab" = "goto_next_function"
 "S-tab" = "goto_prev_function"
-
-# Move Lines Up/Down
 "A-j" = "move_line_down"
 "A-k" = "move_line_up"
 

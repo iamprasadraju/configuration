@@ -6,4 +6,5 @@ pandas
 notebook
 opencv-python
 keras
-uv
+ty
+gen-cli
