@@ -25,8 +25,3 @@ alias code='codium'
 alias hgrep="kitten hyperlinked_grep"
 alias icat="kitten icat"
 
-
-
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
