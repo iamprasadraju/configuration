@@ -1,0 +1,18 @@
+[user]
+	name = iamprasadraju
+	email = gls.prasadraju@gmail.com
+	signingkey = /Users/jarvis/.ssh/github.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[alias]
+	st = status
+	br = branch
+	kdiff = difftool --no-symlinks --dir-diff
+[diff]
+	tool = kitty
+[difftool "kitty"]
+	cmd = kitten diff $LOCAL $REMOTE
+[difftool]
+	prompt = false

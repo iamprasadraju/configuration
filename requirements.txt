@@ -8,3 +8,4 @@ opencv-python
 keras
 ty
 gen-cli
+ruff

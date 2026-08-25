@@ -10,6 +10,8 @@ bufferline = "always"
 color-modes = true
 gutters = ["diff", "spacer", "line-numbers", "spacer"]
 clipboard-provider = "pasteboard"  # Correctly activates native macOS clipboard handling
+scroll-lines = 1
+scrolloff = 5
 
 
 [editor.soft-wrap]
@@ -17,8 +19,8 @@ enable = true
 wrap-indicator = "↩ "
 
 [editor.cursor-shape]
-normal = "block"
-insert = "block"
+normal = "bar"
+insert = "bar"
 select = "underline"
 
 [editor.indent-guides]
