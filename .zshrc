@@ -1,5 +1,6 @@
 # Enable CLI colors
 export CLICOLOR=1
+
 #export LSCOLORS=GxFxCxDxBxegedabagaced   # customize ls colors (optional)
 
 # Prompt
@@ -21,6 +22,11 @@ alias rstudio='open -a RStudio'
 alias activate='source .venv/bin/activate'
 
 alias code='codium'
+alias hgrep="kitten hyperlinked_grep"
+alias icat="kitten icat"
+
 
 
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
