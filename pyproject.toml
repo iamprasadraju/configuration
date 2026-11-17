@@ -10,8 +10,8 @@ requires-python = ">=3.15"
 dependencies = []
 
 [project.scripts]
-backup = "backup:main"
-sync = "sync:main"
+backup = "config.cli:backup_main"
+sync = "config.cli:sync_main"
 
 [build-system]
 requires = ["uv_build>=0.13.8,<0.14.0"]

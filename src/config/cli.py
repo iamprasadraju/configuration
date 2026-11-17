@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
+from config.helpers import targeted_tools_paths
 import argparse
-
-from helpers import targeted_tools
-
 
 parser = argparse.ArgumentParser(description="")
 subparsers = parser.add_subparsers(dest="command", required=True)
 
-# subcommand: backup (device -> save config into config repo)
-backup_parser = subparsers.add_parser("backup", help="Back up local configs")
-backup_parser.add_argument(
-    "targets", nargs="+", choices=targeted_tools(), help="tools to back up"
-)
+tools = targeted_tools_paths(get_tools=True)
 
+def backup_main():
+  # subcommand: backup (device -> save config into config repo)
+  parser = argparse.ArgumentParser(description="Backup config")
+  parser.add_argument(
+    "targets", nargs="+", choices=tools, help="tools to back up"
+  )
+  args = parser.parse_args()
+  print(args)
 
-# subcommand: sync (saved config -> device)
-sync_parser = subparsers.add_parser("sync", help="sync configs")
-sync_parser.add_argument(
-    "targets", nargs="+", choices=targeted_tools(), help="tools to sync"
-)
+def sync_main():
+  # subcommand: sync (saved config -> device)
+  parser = argparse.ArgumentParser(description="Sync config")
+  parser.add_argument(
+    "targets", nargs="+", choices=tools, help="tools to sync"
+  )
 
-args = parser.parse_args()
-print(args)
+  args = parser.parse_args()
+  print(args)
