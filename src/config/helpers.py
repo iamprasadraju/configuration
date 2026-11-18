@@ -35,7 +35,7 @@ def targeted_tools_paths(get_tools = None, get_paths = None) -> dict | list:
     raise ValueError(f"{os} is not supported!")
 
   if get_tools:
-    return tools_paths[os].keys()
+    return list(tools_paths[os].keys())
   if get_paths:
     return tools_paths[os]
 
@@ -69,6 +69,19 @@ def copy_tool_config(tool: str, source_path: Path, destination_path: Path) -> No
     print(f"{tool} backup done !")
 
   else: print(f"Skipping: {source} does not exist")
+
+def user_confirm(op: str) -> None:
+  if op == "backup":
+      print("Backup: Create a backup of system tool configurations.")
+      print("This will create or overwrite existing backups.")
+  elif op == "sync":
+      print("Sync: Apply saved configurations to system tools.")
+      print("Warning: This may overwrite existing system configurations.")
+
+  user_input = input(f"Proceed with '{op}'? [y/n]: ")
+
+  return user_input 
+  
 
 
 def time_it(func):
